@@ -31,8 +31,6 @@ function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 }
 let randNum = getRandomNumber(min, max);
-document.querySelector(".number").textContent = randNum;
-
 
 document.querySelector(".check").addEventListener("click", function() {
     const val = Number(document.querySelector(".guess").value);
